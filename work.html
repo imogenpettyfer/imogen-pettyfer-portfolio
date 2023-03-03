@@ -30,14 +30,23 @@
       </ul>
     </header>
     <div class="hero-headline-wrapper">
-      <h1 class="hero-headline">I'm <div class="changing"><div class="word">Imogen Pettyfer</div>
-        <div class="word">A Visual Designer</div>
-        <div class="word">A Photographer</div>
-        <div class="word">Determind</div>
-        <div class="word">Collaborative</div>
-        <div class="word">Observant</div>
-        <div class="word">Intuitive</div>
-      </div></h1>
+      <h1 class="hero-headline">I'm<div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+      </div>
+    </h1>
+    <svg id="filters">
+      <defs>
+        <filter id="threshold">
+          <feColorMatrix in="SourceGraphic"
+              type="matrix"
+              values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 255 -140" />
+        </filter>
+      </defs>
+    </svg>
       <!-- <figure class="toggleGhost hero-icon" id="btnGhost value=" Hide Ghost" onclick="ShowHideDiv(this)" />💙</figure> -->
     </div>
     <!-- <footer class="hero-footer">
