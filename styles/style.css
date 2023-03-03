@@ -74,7 +74,7 @@ html {
   /* --primary-text-color: #222222; */
   --accent-color: #0437F2;
   /* --overlay-color: #5200FF; */
-  --hyperlink-color: rgb(255, 69, 0);
+  --hyperlink-color: rgb(255, 220, 20);
   /* --hyperlink-alternate-color: orangered; */
   --hover-color: #94a7ec;
   --body-typeface: "Inter", sans-serif;
@@ -528,7 +528,6 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--alt-background-color);
 }
 
 /* Sidebar */
