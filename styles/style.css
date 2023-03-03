@@ -246,6 +246,8 @@ p {
 
 /* Explanation in JS tab */
 
+/* Explanation in JS tab */
+
 /* Cool font from Google Fonts! */
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 
@@ -253,8 +255,15 @@ body {
 	margin: 0px;
 }
 
+h1 {
+	font-size: 50px;
+	font-family: 'Kohinoor Bangla';
+}
+
 #container {
 	/* Center the text in the viewport. */
+	padding-left: 0.5em;
+	padding-top: 0.5em;
 	position: absolute;
 	height: 80pt;
 	top: 0;
@@ -274,7 +283,8 @@ body {
 	display: inline-block;
 	text-align: left;
 	
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Kohinoor Bangla';
+	font-weight: 600;
 	font-size: 40pt;	
 	user-select: none;
 }
