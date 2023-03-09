@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <script src="https://kit.fontawesome.com/d300c2ea15.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/style.css">
-        <link rel="preload" href="KohinoorBangla-Semibold.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="KohinoorBangla-Bold.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="KohinoorBangla-Light.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="KohinoorBangla-Medium.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="KohinoorBangla-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="KohinoorBangla-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="KohinoorBangla-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="KohinoorBangla-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="KohinoorBangla-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="KohinoorBangla-Regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <body class="work-page">
@@ -30,26 +30,26 @@
       </ul>
     </header>
     <div class="hero-headline-wrapper">
-      <h1>I'm
-        <div id="container">
-        <span id="text1"></span>
-        <span id="text2"></span>
-        </div>
+      <div class="hero-headline-inner-wrapper">
+        <h1 class="hero-headline">I'm
         </h1>
-        <!-- The SVG filter used to create the merging effect -->
-        <svg id="filters">
+        <div id="container">
+          <span id="text1"></span>
+          <span id="text2"></span>
+        </div>
+      </div>
+      <!-- The SVG filter used to create the merging effect -->
+      <svg id="filters">
         <defs>
           <filter id="threshold">
             <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
-            <feColorMatrix in="SourceGraphic"
-                type="matrix"
-                values="1 0 0 0 0
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
                         0 1 0 0 0
                         0 0 1 0 0
                         0 0 0 255 -140" />
           </filter>
         </defs>
-        </svg>
+      </svg>
       <!-- <figure class="toggleGhost hero-icon" id="btnGhost value=" Hide Ghost" onclick="ShowHideDiv(this)" />💙</figure> -->
     </div>
     <!-- <footer class="hero-footer">
@@ -61,19 +61,24 @@
 
   <main class="work-wrapper">
     <section class="design-projects">
-      <li class="projects-description">
-        <h2>Design Projects</h2>
-        <p>Here is a preview of my design work. I love to work with a variety of techniques both analog &amp; digital. I'm always adapting to new and exciting ways to design, always wanting to expand my horizons. 
-          <!-- <a href="experiments.html" class="colored-link">easter eggs</a> 🥚🥚🥚? Feel
+      <ul class="grid">
+        <li class="projects-description">
+          <h2>Design Projects</h2>
+          <p>Here is a preview of my design work. I love to work with a variety of techniques both analog &amp; digital.
+            I'm always adapting to new and exciting ways to design, always wanting to expand my horizons.
+            <!-- <a href="experiments.html" class="colored-link">easter eggs</a> 🥚🥚🥚? Feel
           free to make this your own by adding your own logo, custom typography, colours, custom hover states, custom cursors, <a href="javascript:void(0)"
             class="toggleGhost colored-link" id="btnGhost value=" Hide Ghost" onclick="ShowHideDiv(this)">making something
             randomly fly across the screen</a>, animated gradients, animated GIFs, or even super crisp animated SVGs. -->
-        </p>
-      </li>
+          </p>
+        </li>
+      </ul>
       <ul class="grid">
         <li class="work-page-grid-item">
           <figure>
-            <img src="https://previews.dropbox.com/p/thumb/AB314Cj55lXQjsTywbuYJ3w7aacCLPJTOOda_YxNAMTeW_D0nYM6DUHVXGyuwPgdQb3dsAb6zZIPnbx4TxT85o3TB68I6ys1mXZdWFcjAqM9JoQYfXv8RkguyLeiNL4bRnZTRLsiegRRI_E4noQeHHTBmJP_HmhAwD16wFQMCTnC5dyzqlbR4FC05YEPMDsaXKBUn0LYMRPdS9o0SIA4XCE0fwg48pFe7mq4Anv_knHfw05j1TTilajm6GnmfstzQfbBDOSPYVW9fj_xacSHw-yJK4EHFGmft9NI7D7MwU6XIpixm_27XwTXi6KI-5aBUwsI-4DnQciRBAPZ0zmyfNfxkh7mtb7_mwexTbbBQcymNib8qWCfAPyjsgjJNY21txc/p.jpeg" alt="Cymbeline Gin">
+            <img
+              src="https://previews.dropbox.com/p/thumb/AB314Cj55lXQjsTywbuYJ3w7aacCLPJTOOda_YxNAMTeW_D0nYM6DUHVXGyuwPgdQb3dsAb6zZIPnbx4TxT85o3TB68I6ys1mXZdWFcjAqM9JoQYfXv8RkguyLeiNL4bRnZTRLsiegRRI_E4noQeHHTBmJP_HmhAwD16wFQMCTnC5dyzqlbR4FC05YEPMDsaXKBUn0LYMRPdS9o0SIA4XCE0fwg48pFe7mq4Anv_knHfw05j1TTilajm6GnmfstzQfbBDOSPYVW9fj_xacSHw-yJK4EHFGmft9NI7D7MwU6XIpixm_27XwTXi6KI-5aBUwsI-4DnQciRBAPZ0zmyfNfxkh7mtb7_mwexTbbBQcymNib8qWCfAPyjsgjJNY21txc/p.jpeg"
+              alt="Cymbeline Gin">
           </figure>
           <a href="project-1.html">
             <div class="overlay">
@@ -85,52 +90,67 @@
         <li class="work-page-grid-item">
           <a href="project-1.html">
             <figure>
-              <img src="https://previews.dropbox.com/p/thumb/AB314Cj55lXQjsTywbuYJ3w7aacCLPJTOOda_YxNAMTeW_D0nYM6DUHVXGyuwPgdQb3dsAb6zZIPnbx4TxT85o3TB68I6ys1mXZdWFcjAqM9JoQYfXv8RkguyLeiNL4bRnZTRLsiegRRI_E4noQeHHTBmJP_HmhAwD16wFQMCTnC5dyzqlbR4FC05YEPMDsaXKBUn0LYMRPdS9o0SIA4XCE0fwg48pFe7mq4Anv_knHfw05j1TTilajm6GnmfstzQfbBDOSPYVW9fj_xacSHw-yJK4EHFGmft9NI7D7MwU6XIpixm_27XwTXi6KI-5aBUwsI-4DnQciRBAPZ0zmyfNfxkh7mtb7_mwexTbbBQcymNib8qWCfAPyjsgjJNY21txc/p.jpeg" alt="Grove Restaurant">
-            <div class="overlay">
-              <h1 class="overlay-title">Grove Restaurant</h1>
-              <h4 class="overlay-description">Brand Identity</h4>
-            </div>
+              <img
+                src="https://previews.dropbox.com/p/thumb/AB314Cj55lXQjsTywbuYJ3w7aacCLPJTOOda_YxNAMTeW_D0nYM6DUHVXGyuwPgdQb3dsAb6zZIPnbx4TxT85o3TB68I6ys1mXZdWFcjAqM9JoQYfXv8RkguyLeiNL4bRnZTRLsiegRRI_E4noQeHHTBmJP_HmhAwD16wFQMCTnC5dyzqlbR4FC05YEPMDsaXKBUn0LYMRPdS9o0SIA4XCE0fwg48pFe7mq4Anv_knHfw05j1TTilajm6GnmfstzQfbBDOSPYVW9fj_xacSHw-yJK4EHFGmft9NI7D7MwU6XIpixm_27XwTXi6KI-5aBUwsI-4DnQciRBAPZ0zmyfNfxkh7mtb7_mwexTbbBQcymNib8qWCfAPyjsgjJNY21txc/p.jpeg"
+                alt="Grove Restaurant">
+              <div class="overlay">
+                <h1 class="overlay-title">Grove Restaurant</h1>
+                <h4 class="overlay-description">Brand Identity</h4>
+              </div>
             </figure>
           </a>
         </li>
         <li class="work-page-grid-item"><a href="project-2.html">
             <figure>
-              <img src="https://previews.dropbox.com/p/thumb/AB314Cj55lXQjsTywbuYJ3w7aacCLPJTOOda_YxNAMTeW_D0nYM6DUHVXGyuwPgdQb3dsAb6zZIPnbx4TxT85o3TB68I6ys1mXZdWFcjAqM9JoQYfXv8RkguyLeiNL4bRnZTRLsiegRRI_E4noQeHHTBmJP_HmhAwD16wFQMCTnC5dyzqlbR4FC05YEPMDsaXKBUn0LYMRPdS9o0SIA4XCE0fwg48pFe7mq4Anv_knHfw05j1TTilajm6GnmfstzQfbBDOSPYVW9fj_xacSHw-yJK4EHFGmft9NI7D7MwU6XIpixm_27XwTXi6KI-5aBUwsI-4DnQciRBAPZ0zmyfNfxkh7mtb7_mwexTbbBQcymNib8qWCfAPyjsgjJNY21txc/p.jpeg" alt="Hummingbird Skincare">
-          <div class="overlay">
-              <h1 class="overlay-title">Hummingbird Skincare</h1>
-              <h4 class="overlay-description">Brand Identity</h4>
-          </div>
+              <img
+                src="https://previews.dropbox.com/p/thumb/AB314Cj55lXQjsTywbuYJ3w7aacCLPJTOOda_YxNAMTeW_D0nYM6DUHVXGyuwPgdQb3dsAb6zZIPnbx4TxT85o3TB68I6ys1mXZdWFcjAqM9JoQYfXv8RkguyLeiNL4bRnZTRLsiegRRI_E4noQeHHTBmJP_HmhAwD16wFQMCTnC5dyzqlbR4FC05YEPMDsaXKBUn0LYMRPdS9o0SIA4XCE0fwg48pFe7mq4Anv_knHfw05j1TTilajm6GnmfstzQfbBDOSPYVW9fj_xacSHw-yJK4EHFGmft9NI7D7MwU6XIpixm_27XwTXi6KI-5aBUwsI-4DnQciRBAPZ0zmyfNfxkh7mtb7_mwexTbbBQcymNib8qWCfAPyjsgjJNY21txc/p.jpeg"
+                alt="Hummingbird Skincare">
+              <div class="overlay">
+                <h1 class="overlay-title">Hummingbird Skincare</h1>
+                <h4 class="overlay-description">Brand Identity</h4>
+              </div>
             </figure>
           </a>
         </li>
-</main>
-<main class="work-wrapper"> 
-  <section class="photography-projects">
-    <li class="projects-description">
-    <h2>Photography Work</h2>
-    <p>One of my passions in life is photogrphy! I shoot both film &amp; digital. The subjects that interest me the most are automotive, architecture and natural landscapes. My goal moving forward is to become more experienced with portraiture &amp; urban lifestyle photography.
-      <!-- <a href="experiments.html" class="colored-link">easter eggs</a> 🥚🥚🥚? Feel
+      </ul>
+  </main>
+  <main class="work-wrapper">
+    <section class="photography-projects">
+      <ul class="grid">
+        <li class="projects-description">
+          <h2>Photography Work</h2>
+          <p>One of my passions in life is photogrphy! I shoot both film &amp; digital. The subjects that interest me
+            the
+            most are automotive, architecture and natural landscapes. My goal moving forward is to become more
+            experienced
+            with portraiture &amp; urban lifestyle photography.
+            <!-- <a href="experiments.html" class="colored-link">easter eggs</a> 🥚🥚🥚? Feel
       free to make this your own by adding your own logo, custom typography, colours, custom hover states, custom cursors, <a href="javascript:void(0)"
         class="toggleGhost colored-link" id="btnGhost value=" Hide Ghost" onclick="ShowHideDiv(this)">making something
         randomly fly across the screen</a>, animated gradients, animated GIFs, or even super crisp animated SVGs. -->
-    </p>
-  </li>
-        <li class="work-page-grid-item"><a href="project-1.html">
-            <figure>
-              <img src="https://previews.dropbox.com/p/thumb/AB0J9ZxyHJiiF6FX15pLqRwNs-b_zUkYp1RCo9uLH28xLHemk1Rli_USsAkJg9YA8pRnvCPa8Q6YGn3XVAxbydR7VS23EcLh4xKxWoLP_Wbxd268dxFvnhibJXyc_vzvX7Btn28apIrAAYz3rYF3EpET33U3A7z6SqMt6YRchgjWSfLFE4Ht5d8D-WPXvInkpEzrPw6-7RgEn93K9T27rS30yR4ofrtoXmg6b3D794KGoBxh6TRbq-2JcwwhPczEVpJLUjp_O9bbODavGsibR8mv8KNzU1TM5Jcrd8qhEZe30AChopEeaxkFG6qxUHS7KWuCAFtdb_kTgkx-JbbEmCpT7TiJCA3_wiyHRP0rnuowUtD0BBz-37k9I9MMvNnnL4o/p.jpeg" alt="project name">
-            </figure>
-          </a>
+          </p>
         </li>
         <li class="work-page-grid-item"><a href="project-1.html">
             <figure>
-              <img src="https://previews.dropbox.com/p/thumb/AB0J9ZxyHJiiF6FX15pLqRwNs-b_zUkYp1RCo9uLH28xLHemk1Rli_USsAkJg9YA8pRnvCPa8Q6YGn3XVAxbydR7VS23EcLh4xKxWoLP_Wbxd268dxFvnhibJXyc_vzvX7Btn28apIrAAYz3rYF3EpET33U3A7z6SqMt6YRchgjWSfLFE4Ht5d8D-WPXvInkpEzrPw6-7RgEn93K9T27rS30yR4ofrtoXmg6b3D794KGoBxh6TRbq-2JcwwhPczEVpJLUjp_O9bbODavGsibR8mv8KNzU1TM5Jcrd8qhEZe30AChopEeaxkFG6qxUHS7KWuCAFtdb_kTgkx-JbbEmCpT7TiJCA3_wiyHRP0rnuowUtD0BBz-37k9I9MMvNnnL4o/p.jpeg"
+              <img
+                src="https://previews.dropbox.com/p/thumb/AB0J9ZxyHJiiF6FX15pLqRwNs-b_zUkYp1RCo9uLH28xLHemk1Rli_USsAkJg9YA8pRnvCPa8Q6YGn3XVAxbydR7VS23EcLh4xKxWoLP_Wbxd268dxFvnhibJXyc_vzvX7Btn28apIrAAYz3rYF3EpET33U3A7z6SqMt6YRchgjWSfLFE4Ht5d8D-WPXvInkpEzrPw6-7RgEn93K9T27rS30yR4ofrtoXmg6b3D794KGoBxh6TRbq-2JcwwhPczEVpJLUjp_O9bbODavGsibR8mv8KNzU1TM5Jcrd8qhEZe30AChopEeaxkFG6qxUHS7KWuCAFtdb_kTgkx-JbbEmCpT7TiJCA3_wiyHRP0rnuowUtD0BBz-37k9I9MMvNnnL4o/p.jpeg"
                 alt="project name">
             </figure>
           </a>
         </li>
         <li class="work-page-grid-item"><a href="project-1.html">
             <figure>
-              <img src="https://previews.dropbox.com/p/thumb/AB0J9ZxyHJiiF6FX15pLqRwNs-b_zUkYp1RCo9uLH28xLHemk1Rli_USsAkJg9YA8pRnvCPa8Q6YGn3XVAxbydR7VS23EcLh4xKxWoLP_Wbxd268dxFvnhibJXyc_vzvX7Btn28apIrAAYz3rYF3EpET33U3A7z6SqMt6YRchgjWSfLFE4Ht5d8D-WPXvInkpEzrPw6-7RgEn93K9T27rS30yR4ofrtoXmg6b3D794KGoBxh6TRbq-2JcwwhPczEVpJLUjp_O9bbODavGsibR8mv8KNzU1TM5Jcrd8qhEZe30AChopEeaxkFG6qxUHS7KWuCAFtdb_kTgkx-JbbEmCpT7TiJCA3_wiyHRP0rnuowUtD0BBz-37k9I9MMvNnnL4o/p.jpeg" alt="project name">
+              <img
+                src="https://previews.dropbox.com/p/thumb/AB0J9ZxyHJiiF6FX15pLqRwNs-b_zUkYp1RCo9uLH28xLHemk1Rli_USsAkJg9YA8pRnvCPa8Q6YGn3XVAxbydR7VS23EcLh4xKxWoLP_Wbxd268dxFvnhibJXyc_vzvX7Btn28apIrAAYz3rYF3EpET33U3A7z6SqMt6YRchgjWSfLFE4Ht5d8D-WPXvInkpEzrPw6-7RgEn93K9T27rS30yR4ofrtoXmg6b3D794KGoBxh6TRbq-2JcwwhPczEVpJLUjp_O9bbODavGsibR8mv8KNzU1TM5Jcrd8qhEZe30AChopEeaxkFG6qxUHS7KWuCAFtdb_kTgkx-JbbEmCpT7TiJCA3_wiyHRP0rnuowUtD0BBz-37k9I9MMvNnnL4o/p.jpeg"
+                alt="project name">
+            </figure>
+          </a>
+        </li>
+        <li class="work-page-grid-item"><a href="project-1.html">
+            <figure>
+              <img
+                src="https://previews.dropbox.com/p/thumb/AB0J9ZxyHJiiF6FX15pLqRwNs-b_zUkYp1RCo9uLH28xLHemk1Rli_USsAkJg9YA8pRnvCPa8Q6YGn3XVAxbydR7VS23EcLh4xKxWoLP_Wbxd268dxFvnhibJXyc_vzvX7Btn28apIrAAYz3rYF3EpET33U3A7z6SqMt6YRchgjWSfLFE4Ht5d8D-WPXvInkpEzrPw6-7RgEn93K9T27rS30yR4ofrtoXmg6b3D794KGoBxh6TRbq-2JcwwhPczEVpJLUjp_O9bbODavGsibR8mv8KNzU1TM5Jcrd8qhEZe30AChopEeaxkFG6qxUHS7KWuCAFtdb_kTgkx-JbbEmCpT7TiJCA3_wiyHRP0rnuowUtD0BBz-37k9I9MMvNnnL4o/p.jpeg"
+                alt="project name">
             </figure>
           </a>
         </li>
@@ -157,7 +177,7 @@
     </li>
     <li class="footer-item-4">
       <p><a href="#top">Back to the top</a></p>
-      <p class="fineprint">Imogen Pettyfer &copy; 2023. 
+      <p class="fineprint">Imogen Pettyfer &copy; 2023.
         <!-- Hand crafted with <span class="heart">❤</span> + Flexbox  + CSS Grid by James Neufeld. -->
       </p>
     </li>
@@ -192,5 +212,7 @@
 
     window.addEventListener("scroll", myScrollFunc);
   </script>
+  <script src="./js/javascript.js"></script>
 </body>
+
 </html>
