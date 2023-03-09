@@ -260,9 +260,24 @@ h1 {
 	font-family: 'Kohinoor Bangla';
 }
 
-#morphing {
+/* Explanation in JS tab */
+
+/* Cool font from Google Fonts! */
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+body {
+	margin: 0px;
+}
+
+h1 {
+	font-size: 50px;
+	font-family: 'Kohinoor Bangla';
+}
+
+#container {
 	/* Center the text in the viewport. */
-	padding-left: 2em;
+	padding-left: 0.5em;
+	padding-top: 0.5em;
 	position: absolute;
 	height: 80pt;
 	top: 0;
@@ -533,8 +548,8 @@ h1 {
 /* Sidebar */
 .project-aside {
   width: 100%;
-  color: white;
-  background: orangered;
+  color: ;
+  background: ;
   padding: 1rem;
   display: flex;
   flex-direction: column;

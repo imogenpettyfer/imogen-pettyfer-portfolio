@@ -1,10 +1,6 @@
-$(document).ready(function() {
-  $('.experiment-image-1').click(function() {
-    $('.experiment-image-2').fadeToggle("slow");
-    // Alternative animation for example
-    // slideToggle("fast");
-  });
-});
+/*
+	This pen cleverly utilizes SVG filters to create a "Morphing Text" effect. Essentially, it layers 2 text elements on top of each other, and blurs them depending on which text element should be more visible. Once the blurring is applied, both texts are fed through a threshold filter together, which produces the "gooey" effect. Check the CSS - Comment the #container rule's filter out to see how the blurring works!
+*/
 
 const elts = {
 	text1: document.getElementById("text1"),
@@ -13,13 +9,7 @@ const elts = {
 
 // The strings to morph between. You can change these to anything you want!
 const texts = [
-	"Imogen Pettyfer",
-	"A Visual Designer",
-	"A Photographer",
-	"Organized",
-	"Collaborative",
-	"Intuitive",
-	"Determind?"
+	"Imogen Pettyfer", "A Designer", "Organized", "Collaborative", "A Photographer", "Intuitive", "Observant", "Visuals", ""
 ];
 
 // Controls the speed of morphing.
