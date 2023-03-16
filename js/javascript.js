@@ -9,8 +9,7 @@ const elts = {
 
 // The strings to morph between. You can change these to anything you want!
 const texts = [
-	"Imogen Pettyfer", "A Designer", "Organized", "Collaborative", "A Photographer", "Intuitive", "Observant", "Visuals", ""
-];
+	"Imogen Pettyfer", "A Designer", "Organized", "Collaborative", "A Photographer", "Intuitive", "Observant",];
 
 // Controls the speed of morphing.
 const morphTime = 1;
