@@ -223,6 +223,21 @@ p {
   color: var(--project-description-color);
 }
 
+/* SVG Logo Colour and Hover effects */
+
+
+.cls-1 {
+  fill: #fffef9;
+}
+
+.m-letter {
+  fill: white;
+}
+.i-dot:hover,
+.i-stem:hover {
+  fill: #df9f20;
+}
+
 
 /* Global Padding on every page */
 
@@ -609,7 +624,7 @@ p {
 
 .holding-page-inner-container {
   display: grid;
-  place-items: left;
+ width: 70%;
   text-align: left;
 }
 
