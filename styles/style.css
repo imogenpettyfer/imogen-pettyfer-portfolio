@@ -301,7 +301,7 @@ p {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to left bottom, #0818a8, #0a1eb5, #0b23c3, #0c29d1, #0a2fdf, #3f42e8, #5b55f1, #7268f9, #9a8dfd, #beb2ff, #dfd8ff, #ffffff);
+  background-image: linear-gradient(to right bottom, #004d40, #02665a, #047f77, #069a96, #0ab5b8);
 }
 .branding-navigation {
   display: flex;
