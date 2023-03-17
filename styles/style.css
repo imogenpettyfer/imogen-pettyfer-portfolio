@@ -226,6 +226,18 @@ p {
 /* SVG Logo Colour and Hover effects */
 
 
+.holding-page .cls-1 {
+  fill: #fffffa;
+}
+
+.holding-page .m-letter { 
+  fill: #fffffa;
+}
+.holding-page .i-dot:hover,
+.i-stem:hover {
+  fill: #df9f20;
+}
+
 .cls-1 {
   fill: #0AB5B8;
 }
