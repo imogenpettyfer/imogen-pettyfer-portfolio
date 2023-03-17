@@ -61,8 +61,7 @@ html {
   /* --hover-color: #94a7ec; */
   --body-typeface: 'Kohinoor Bangla';
   --heading-typeface: 'Kohinoor Bangla';
-  --hero-headline-color: #fffffa;
-  --alt-headline-colour: #0AB5B8
+  --hero-headline-color: #0AB5B8;
   --project-title-color: #004D40;
   --project-description-color:  #0E0033;
   --project-title-typeface: 'Kohinoor Bangla';
@@ -228,11 +227,11 @@ p {
 
 
 .cls-1 {
-  fill: #fffef9;
+  fill: #0AB5B8;
 }
 
-.m-letter {
-  fill: white;
+.m-letter { 
+  fill: #0AB5B8;
 }
 .i-dot:hover,
 .i-stem:hover {
