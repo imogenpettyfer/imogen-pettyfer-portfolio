@@ -62,6 +62,7 @@ html {
   --body-typeface: 'Kohinoor Bangla';
   --heading-typeface: 'Kohinoor Bangla';
   --hero-headline-color: #fffffa;
+  --alt-headline-colour: #0AB5B8
   --project-title-color: #004D40;
   --project-description-color:  #0E0033;
   --project-title-typeface: 'Kohinoor Bangla';
@@ -438,17 +439,17 @@ p {
   padding: 1em;
   background-color: var(--overlay-color);
   transition: opacity .3s, visibility .3s;
-}
+} 
 
-.work-page-grid-item:hover .overlay {
+/* .work-page-grid-item:hover .overlay {
   visibility: visible;
   opacity: .8;
-}
+} */
 
 
-.work-page, h2 {
+/* .project-description, h2 {
   color: var(--accent-color);
-}
+} */
 
 .work-page, p {
   color: #0E0033;
