@@ -56,14 +56,16 @@ html {
   --accent-color: #0437F2;
   --overlay-color: #5200FF;
   --hyperlink-color: rgb(255, 220, 20);
+  --hyperlink-hover-color: rgb(255, 220, 20);
   --hyperlink-alternate-color: orangered;
   --hover-color: #94a7ec;
   --body-typeface: 'Kohinoor Bangla';
   --heading-typeface: 'Kohinoor Bangla';
   --hero-headline-color: #fffffa;
   --project-title-color: #fffffa;
+  --project-description-color:  rgb(255, 220, 20);
   --project-title-typeface: 'Kohinoor Bangla';
-  --background-color: #f5f5f5;
+  --background-color: #004d40;
   --alt-background-color: #0818A8;
   --text-selection-background-color: #555;
 }
@@ -172,7 +174,7 @@ a:active {
 
 .navigation-arrow:link {
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #555555;
+  -webkit-text-stroke-color: var(--hyperlink-hover-color);
   color: transparent;
 }
 
@@ -218,8 +220,13 @@ p {
   font-size: .875rem;
   line-height: 1.2;
   margin-bottom: 1rem;
+  color: var(--project-description-color);
 }
 
+
+/* Global Padding on every page */
+
+.work-page, .project-1 {}
 
 
 /* Hero 
@@ -232,7 +239,8 @@ p {
                                  
 */
 
-
+.hero-header {display: flex; flex-direction: row; justify-content: space-between;
+}
 
 
 
@@ -280,16 +288,22 @@ p {
   flex-direction: column;
   background-image: linear-gradient(to left bottom, #0818a8, #0a1eb5, #0b23c3, #0c29d1, #0a2fdf, #3f42e8, #5b55f1, #7268f9, #9a8dfd, #beb2ff, #dfd8ff, #ffffff);
 }
-
 .branding-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding: 1rem;
+  align-items: center;
+}
+.header-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   padding: 1rem;
   align-items: center;
 }
 
-
+.navigation-item {margin-left: 1rem;}
 .logo {
   width: 3rem;
 }
@@ -550,7 +564,6 @@ p {
 
 .project-image {
   width: 100%;
-  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -568,10 +581,6 @@ p {
 
 .project-details {
   width: 100%;
-  background-image: linear-gradient(-225deg,
-      #ff057c 0%,
-      #8d0b93 50%,
-      #321575 100%);
   padding: 1rem;
 }
 
@@ -798,7 +807,7 @@ a.sub-navigation-link:hover {
   }
 
   .logo {
-    width: 5rem;
+    width: 3rem;
   }
 
   .hero {
@@ -914,7 +923,7 @@ a.sub-navigation-link:hover {
   }
 
   .project-image {
-    min-height: 100vh;
+
   }
 
   .project-image-container {
