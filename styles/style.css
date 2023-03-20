@@ -478,10 +478,6 @@ p {
                                            
 */
 
-.about-page {
-  background-image: linear-gradient(to left top, #3742a5, #716dbc, #a19bd3, #d0cce9, #ffffff);
-}
-
 .about {
   display: grid;
   grid-template-columns: 1fr;
