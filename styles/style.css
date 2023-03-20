@@ -532,9 +532,9 @@ p {
   padding: 1rem;
 }
 
-.global-footer, h2 {
+/* .global-footer, h2 {
   color: #fffffa;
-}
+} */
 
 .footer-item-1 {
   grid-column: 1 / 2;
