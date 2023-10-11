@@ -253,7 +253,9 @@ p {
 
 /* Global Padding on every page */
 
-.work-page, .project-1 {}
+.work-page {
+  background-image: linear-gradient(to right bottom, #004c40, #206250, #3a795f, #54916f, #70a97e);
+}
 
 
 /* Hero 
@@ -313,12 +315,12 @@ p {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to right bottom, #004d40, #02665a, #047f77, #069a96, #0ab5b8);
 }
 .branding-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
+  width: 100%;
   padding: 1rem;
   align-items: center;
 }
@@ -524,7 +526,6 @@ p {
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   min-height: 50vh;
-  background: var(--alt-background-color);
   padding: 1rem;
 }
 
