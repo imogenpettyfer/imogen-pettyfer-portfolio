@@ -52,16 +52,16 @@ html {
 */
 
 :root {
-  --primary-text-color: #0E0033;
-  --accent-color: #0AB5B8;
+  --primary-text-color: #0A100F;
+  --accent-color: #FFD34E;
   --overlay-color: #004D40;
-  --hyperlink-color: #DF9F20;
-  --hyperlink-hover-color: rgb(255, 220, 20);
+  --hyperlink-color: #FFD34E;
+  /* --hyperlink-hover-color: #fffffa; */
   /* --hyperlink-alternate-color: orangered; */
   /* --hover-color: #94a7ec; */
   --body-typeface: 'Kohinoor Bangla';
   --heading-typeface: 'Kohinoor Bangla';
-  --hero-headline-color: #0AB5B8;
+  --hero-headline-color: #fffffa;
   --project-title-color: #004D40;
   --project-description-color:  #0E0033;
   --project-title-typeface: 'Kohinoor Bangla';
@@ -500,9 +500,12 @@ p {
 
 .about-item-3 {
   margin-left: 5em;
-  ;
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+}
+
+.about-item-3, .socials- {
+  color: #FFD34E;
 }
 
 .about-item-4 {
@@ -576,8 +579,6 @@ p {
 /* Sidebar */
 .project-aside {
   width: 100%;
-  color: ;
-  background: ;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -644,29 +645,30 @@ p {
   place-items: center;
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(to right bottom, #004d40, #02665a, #047f77, #069a96, #0ab5b8);
+  background-image: linear-gradient(to right bottom, #004c40, #206250, #3a795f, #54916f, #70a97e);
 }
 
 .holding-page-inner-container {
   display: grid;
- width: 70%;
+  width: 70%;
   text-align: left;
 }
 
 .holding-page-image {
   margin-bottom: 1rem;
-  width: 25%;
-  height: 25%;
+  width: 15%;
+  height: 15%;
 }
 
 .holding-page-title {
-  font-size: 2rem;
-  color: white;
-  padding-top: 5em;
+  font-size: 5rem;
+  color: var(--accent-color);
+  padding-top: 2em;
+  kerning: 125%;
+  text-transform: uppercase;
 }
 
 .holding-page-copyright {
-  color: rgb(255, 220, 20);
   padding-top: 3rem;
 }
 
@@ -815,6 +817,13 @@ a.sub-navigation-link:hover {
   }
 }
 
+.photography-page {
+  background-image: linear-gradient(to right bottom, #dee3f0, #deecf3, #e6f4f3, #f3f9f4, #fffffa);
+}
+
+.photography-page .project-info {
+  color: #0D2059;
+}
 
 /*
 
@@ -876,6 +885,10 @@ a.sub-navigation-link:hover {
     filter: grayscale(0);
   }
 
+.about-page {
+  background-image: linear-gradient(to right bottom, #004c40, #206250, #3a795f, #54916f, #70a97e);
+}
+
   .about {
     padding: 4rem;
     grid-template-columns: 1fr 1fr 1fr;
@@ -899,6 +912,10 @@ a.sub-navigation-link:hover {
   .about-item-2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+  }
+
+  .about-item-2, p {
+    color: #FFFFFA;
   }
 
   .footer-item-2 {
