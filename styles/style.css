@@ -49,32 +49,33 @@ html {
 */
 
 :root {
-  --primary-text-color: #0a100f;
-  --accent-color: #ffd34e;
-  --active-design-page: #70a97e;
-  --active-photography-page: #e2138f;
-  --active-work-page: #d8e70e;
-  --active-about-page: green;
-  --links-design-page: #1414d8;
-  --links-photography-page: #e2138f;
-  --links-work-page: #cf1d23;
-  --links-about-page: rgb(255, 18, 231);
-  --background-design-page: #fff4cf;
-  --background-photography-page: #dee3f0;
-  --overlay-color: #004d40;
-  --hyperlink-color: #ffd34e;
-  /* --hyperlink-hover-color: #fffffa; */
+  --primary-text-color: #0A100F;
+  --white-text-color: #fffffa;
+  --accent-color: #FFD34E;
+  --active-design-page: #004C40;
+  --active-photography-page: #0D2059;
+  --active-work-page: #FFD34E;
+  --active-about-page: #FFD34E;
+  --links-design-page: #70A97E;
+  --links-photography-page: #798FD2;
+  --links-work-page: #FFD34E;
+  --links-about-page: #FFD34E;
+  --background-design-page: linear-gradient(to right bottom, #fff9e5, #f6f5e2, #edf2df, #e4eedd, #dceadb);;
+  --background-photography-page: linear-gradient(to right bottom, #fffffa, #f3f9f4, #e6f4f3, #deecf3, #dee3f0);
+  --overlay-color: #004C40;
+  --hyperlink-color: #FFD34E;
+  --hyperlink-hover-color: #FFD34E;
   /* --hyperlink-alternate-color: orangered; */
   /* --hover-color: #94a7ec; */
   --body-typeface: "Kohinoor Bangla";
   --heading-typeface: "Kohinoor Bangla";
   --hero-headline-color: #fffffa;
   --project-title-color: #004d40;
-  --project-description-color: #0e0033;
+  --project-description-color: #0A100F;
   --project-title-typeface: "Kohinoor Bangla";
   --background-color: #fffffa;
-  --alt-background-color: #004d40;
-  --text-selection-background-color: #555;
+  /* --alt-background-color: #004d40; */
+  --text-selection-background-color: #F26C0D;
 }
 
 body {
@@ -173,38 +174,33 @@ a:active {
 
 /* Custom navigation colour styles */
 
-a.active-design-page {
+span.active-design-page {
   color: var(--active-design-page);
-  font-weight: 900;
+  font-weight: bold;
 }
-a.active-photography-page {
+span.active-photography-page {
   color: var(--active-photography-page);
   font-weight: 900;
 }
-a.active-work-page {
+span.active-work-page {
   color: var(--active-work-page);
   font-weight: 900;
 }
-a.active-about-page {
+span.active-about-page {
   color: var(--active-about-page);
   font-weight: 900;
 }
-
 a.links-design-page {
   color: var(--links-design-page);
-  font-weight: 900;
 }
 a.links-photography-page {
   color: var(--links-photography-page);
-  font-weight: 900;
 }
 a.links-work-page {
   color: var(--links-work-page);
-  font-weight: 900;
 }
 a.links-about-page {
   color: var(--links-about-page);
-  font-weight: 900;
 }
 
 .navigation-arrow {
@@ -266,37 +262,30 @@ p {
   fill: #fffffa;
 }
 
-.holding-page .m-letter {
+/* .holding-page .m-letter {
   fill: #fffffa;
 }
 .holding-page .i-dot:hover,
 .i-stem:hover {
   fill: #df9f20;
-}
+} */
 
 .cls-1 {
-  fill: #0ab5b8;
+  fill: lime;
 }
 
-.m-letter {
-  fill: #0ab5b8;
+/* .m-letter {
+  fill: lime;
 }
 .i-dot:hover,
 .i-stem:hover {
-  fill: #df9f20;
-}
+  fill: ##0ab5b8;
+} */
 
 /* Global Padding on every page */
 
 .work-page {
-  background-image: linear-gradient(
-    to right bottom,
-    #004c40,
-    #206250,
-    #3a795f,
-    #54916f,
-    #70a97e
-  );
+  background-image: linear-gradient(to right bottom, #004c40, #206250, #3a795f, #54916f, #70a97e);
 }
 
 /* Hero 
@@ -329,7 +318,7 @@ p {
 .hero-headline,
 #text1,
 #text2 {
-  color: white;
+  color: #fffffa;
   text-transform: uppercase;
   font-family: "Kohinoor Bangla";
   font-weight: 600;
@@ -341,7 +330,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 0.675rem;
+  margin-right: 0.675rem; 
 }
 
 /* Your average text styling */
@@ -406,7 +395,7 @@ p {
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  color: #0437f2;
+  color: #FFD34E;
 }
 
 .hero-footer-navigation {
@@ -502,7 +491,7 @@ p {
 
 .work-page,
 p {
-  color: #0e0033;
+  color: var(--white-text-color);
 }
 
 /* CodePen Card Demo Style */
@@ -626,13 +615,14 @@ p {
 .title {
   font-size: 1.3rem;
   font-weight: bold;
+  text-transform: uppercase;
   line-height: 1.2;
 }
 
 .copy {
-  font-family: var(--font-serif);
+  /* font-family: var(--font-serif); */
   font-size: 1.125rem;
-  font-style: italic;
+  /* font-style: italic; */
   line-height: 1.35;
 }
 
@@ -644,26 +634,21 @@ p {
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
-  color: white;
-  background-color: black;
+  color: #FFFFFA;
+  background-color: #70A97E;
   border: none;
 }
 .btn:hover {
-  background-color: #0d0d0d;
+  background-color: #FFD34E;
 }
 .btn:focus {
-  outline: 1px dashed yellow;
+  outline: 1px dashed #FFD34E;
   outline-offset: 3px;
 }
 
 @media (hover: hover) and (min-width: 600px) {
-  .card:after {
-    transform: translateY(0);
-  }
-
-  .content {
-    transform: translateY(calc(100% - 4.5rem));
-  }
+  .card:after { transform: translateY(0); }
+  .content { transform: translateY(calc(100% - 4.5rem)); }
   .content > *:not(.title) {
     opacity: 0;
     transform: translateY(1rem);
@@ -711,14 +696,7 @@ p {
                                            
 */
 .about-page {
-  background-image: linear-gradient(
-    to right bottom,
-    #004c40,
-    #206250,
-    #3a795f,
-    #54916f,
-    #70a97e
-  );
+  background-image: linear-gradient(to right bottom, #004c40, #206250, #3a795f, #54916f, #70a97e);
 }
 
 .about-page p {
@@ -751,7 +729,7 @@ p {
 
 .about-item-3,
 .socials- {
-  color: #ffd34e;
+  color: var(--accent-color);
 }
 
 .about-item-4 {
@@ -765,7 +743,7 @@ p {
   background: var(--background-design-page);
 }
 
-/* Photography Page Styles */
+/* Page Styles */
 
 .background-photography-page {
   background: var(--background-photography-page);
@@ -815,7 +793,7 @@ p {
 
 .footer-item-4,
 .fineprint {
-  color: #0ab5b8;
+  color: #FFD34E;
 }
 
 /* Project Page 
