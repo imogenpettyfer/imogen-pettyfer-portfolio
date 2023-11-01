@@ -751,7 +751,16 @@ p {
   margin: 0 auto;
   font-family: var(--font-sans);
 }
-
+@media (min-width: 600px) {
+  .design-page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .design-page-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* Page Styles */
 
 .background-photography-page {
