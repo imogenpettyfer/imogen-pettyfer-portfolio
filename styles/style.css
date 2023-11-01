@@ -743,6 +743,15 @@ p {
   background: var(--background-design-page);
 }
 
+.design-page-content {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+}
+
 /* Page Styles */
 
 .background-photography-page {
