@@ -40,6 +40,8 @@ html {
 
 /* Use variable for to easily change your theme's colour scheme and typography.
 
+
+
 ██    ██  █████  ██████  ██  █████  ██████  ██      ███████ ███████ 
 ██    ██ ██   ██ ██   ██ ██ ██   ██ ██   ██ ██      ██      ██      
 ██    ██ ███████ ██████  ██ ███████ ██████  ██      █████   ███████ 
@@ -49,33 +51,47 @@ html {
 */
 
 :root {
-  --primary-text-color: #0A100F;
+  --primary-text-color: #0a100f;
   --white-text-color: #fffffa;
-  --accent-color: #FFD34E;
-  --active-design-page: #004C40;
-  --active-photography-page: #0D2059;
-  --active-work-page: #FFD34E;
-  --active-about-page: #FFD34E;
-  --links-design-page: #70A97E;
-  --links-photography-page: #798FD2;
-  --links-work-page: #FFD34E;
-  --links-about-page: #FFD34E;
-  --background-design-page: linear-gradient(to right bottom, #fff9e5, #f6f5e2, #edf2df, #e4eedd, #dceadb);;
-  --background-photography-page: linear-gradient(to right bottom, #fffffa, #f3f9f4, #e6f4f3, #deecf3, #dee3f0);
-  --overlay-color: #004C40;
-  --hyperlink-color: #FFD34E;
-  --hyperlink-hover-color: #FFD34E;
+  --accent-color: #ffd34e;
+  --active-design-page: #004c40;
+  --active-photography-page: #0d2059;
+  --active-work-page: #ffd34e;
+  --active-about-page: #ffd34e;
+  --links-design-page: #70a97e;
+  --links-photography-page: #798fd2;
+  --links-work-page: #ffd34e;
+  --links-about-page: #ffd34e;
+  --background-design-page: linear-gradient(
+    to right bottom,
+    #fff9e5,
+    #f6f5e2,
+    #edf2df,
+    #e4eedd,
+    #dceadb
+  );
+  --background-photography-page: linear-gradient(
+    to right bottom,
+    #fffffa,
+    #f3f9f4,
+    #e6f4f3,
+    #deecf3,
+    #dee3f0
+  );
+  --overlay-color: #004c40;
+  --hyperlink-color: #ffd34e;
+  --hyperlink-hover-color: #ffd34e;
   /* --hyperlink-alternate-color: orangered; */
   /* --hover-color: #94a7ec; */
   --body-typeface: "Kohinoor Bangla";
   --heading-typeface: "Kohinoor Bangla";
   --hero-headline-color: #fffffa;
   --project-title-color: #004d40;
-  --project-description-color: #0A100F;
+  --project-description-color: #0a100f;
   --project-title-typeface: "Kohinoor Bangla";
   --background-color: #fffffa;
   /* --alt-background-color: #004d40; */
-  --text-selection-background-color: #F26C0D;
+  --text-selection-background-color: #f26c0d;
 }
 
 body {
@@ -285,7 +301,14 @@ p {
 /* Global Padding on every page */
 
 .work-page {
-  background-image: linear-gradient(to right bottom, #004c40, #206250, #3a795f, #54916f, #70a97e);
+  background-image: linear-gradient(
+    to right bottom,
+    #004c40,
+    #206250,
+    #3a795f,
+    #54916f,
+    #70a97e
+  );
 }
 
 /* Hero 
@@ -330,7 +353,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 0.675rem; 
+  margin-right: 0.675rem;
 }
 
 /* Your average text styling */
@@ -395,7 +418,7 @@ p {
   justify-content: center;
   flex-direction: column;
   text-align: left;
-  color: #FFD34E;
+  color: #ffd34e;
 }
 
 .hero-footer-navigation {
@@ -634,21 +657,25 @@ p {
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
-  color: #FFFFFA;
-  background-color: #70A97E;
+  color: #fffffa;
+  background-color: #70a97e;
   border: none;
 }
 .btn:hover {
-  background-color: #FFD34E;
+  background-color: #ffd34e;
 }
 .btn:focus {
-  outline: 1px dashed #FFD34E;
+  outline: 1px dashed #ffd34e;
   outline-offset: 3px;
 }
 
 @media (hover: hover) and (min-width: 600px) {
-  .card:after { transform: translateY(0); }
-  .content { transform: translateY(calc(100% - 4.5rem)); }
+  .card:after {
+    transform: translateY(0);
+  }
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
   .content > *:not(.title) {
     opacity: 0;
     transform: translateY(1rem);
@@ -696,7 +723,14 @@ p {
                                            
 */
 .about-page {
-  background-image: linear-gradient(to right bottom, #004c40, #206250, #3a795f, #54916f, #70a97e);
+  background-image: linear-gradient(
+    to right bottom,
+    #004c40,
+    #206250,
+    #3a795f,
+    #54916f,
+    #70a97e
+  );
 }
 
 .about-page p {
@@ -747,9 +781,10 @@ p {
   display: grid;
   grid-gap: 1rem;
   padding: 1rem;
-  max-width: 1024px;
+  width: 90%;
   margin: 0 auto;
   font-family: var(--font-sans);
+  border: 2px dashed orange;
 }
 @media (min-width: 600px) {
   .design-page-content {
@@ -760,6 +795,101 @@ p {
   .design-page-content {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.design-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+  .design-card {
+    min-height: 650px; /* change back to height not min-height if glitches appear */
+    background-position: center center;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.design-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+.design-card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.009) 11.7%,
+    rgba(0, 0, 0, 0.034) 22.1%,
+    rgba(0, 0, 0, 0.072) 31.2%,
+    rgba(0, 0, 0, 0.123) 39.4%,
+    rgba(0, 0, 0, 0.182) 46.6%,
+    rgba(0, 0, 0, 0.249) 53.1%,
+    rgba(0, 0, 0, 0.32) 58.9%,
+    rgba(0, 0, 0, 0.394) 64.3%,
+    rgba(0, 0, 0, 0.468) 69.3%,
+    rgba(0, 0, 0, 0.54) 74.1%,
+    rgba(0, 0, 0, 0.607) 78.8%,
+    rgba(0, 0, 0, 0.668) 83.6%,
+    rgba(0, 0, 0, 0.721) 88.7%,
+    rgba(0, 0, 0, 0.762) 94.1%,
+    rgba(0, 0, 0, 0.79) 100%
+  );
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+.design-card:nth-child(1):before {
+  background-image: url(../assets/hummingbird-sc/lip-scrub_hero.jpg);
+}
+.design-card:nth-child(2):before {
+  background-image: url(../assets/burn-bc/posters-series-hero.jpg);
+}
+.design-card:nth-child(3):before {
+  background-image: url(../assets/cymbeline-gin/front-bottle-mockup.jpg);
+}
+
+.design-card:nth-child(4):before {
+  background-image: url(../assets/photography/imogen-pettyfer-visual-photographer-photography-abbottsford-airshow-airplane-nikon.jpg);
+}
+.design-card:nth-child(5):before {
+  background-image: url(../assets/photography/imogen-pettyfer-visual-photographer-photography-durham-cathedral-architecture-nikon.jpg);
+}
+.design-card:nth-child(6):before {
+  background-image: url(../assets/photography/imogen-pettyfer-visuals-photographer-photography-farm-autumn-fall-framing-composition-trees-leaves-nikon.jpg);
+}
+.design-card:nth-child(7):before {
+  background-image: url(../assets/hummingbird-sc/lip-scrub_hero.jpg);
+}
+.design-card:nth-child(8):before {
+  background-image: url(../assets/burn-bc/posters-series-hero.jpg);
+}
+.design-card:nth-child(9):before {
+  background-image: url(../assets/cymbeline-gin/front-bottle-mockup.jpg);
 }
 /* Page Styles */
 
@@ -811,7 +941,7 @@ p {
 
 .footer-item-4,
 .fineprint {
-  color: #FFD34E;
+  color: #ffd34e;
 }
 
 /* Project Page 
@@ -1208,26 +1338,45 @@ a.sub-navigation-link:hover {
   }
 
   /* Project Page Flex Direction on Large Devices */
-  .project-wrapper {
+  /* .project-wrapper {
     flex-direction: row;
-  }
+  } */
 
   /* Sidebar on Large Devices */
-  .project-aside {
+  /* .project-aside {
     width: 35%;
     height: 65vh;
     position: -webkit-sticky;
     position: sticky;
     top: 5vh;
     padding-right: 2rem;
-  }
+  } */
 
   /* Main Project Image Area on Large Devices */
   .project-details {
-    width: 65%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px dashed plum;
   }
 
-  .project-image {
+  .project-image-row {
+    width: 100%;
+    border: 5px dotted black;
+    display: flex;
+    flex-direction: row;
+  }
+  .project-image-single {
+    width: 100%;
+    background: goldenrod;
+  }
+  .project-image-double {
+    width: 50%;
+    background: lightskyblue;
+  }
+  .project-image-triple {
+    width: 33.333333%;
+    background: lightyellow;
   }
 
   .project-image-container {
