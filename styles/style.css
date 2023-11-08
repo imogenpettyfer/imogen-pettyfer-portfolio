@@ -12,6 +12,8 @@ Imported stylesheets. Remove the ones you do not want to use.
 */
 
 @import url("scroll-to-top.css");
+@import url("custom-fonts.css");
+@import url("canela.css");
 
 /*
 X-Small devices (portrait phones, less than 576px) 
@@ -83,12 +85,12 @@ html {
   --hyperlink-hover-color: #ffd34e;
   /* --hyperlink-alternate-color: orangered; */
   /* --hover-color: #94a7ec; */
-  --body-typeface: "Kohinoor Bangla";
-  --heading-typeface: "Kohinoor Bangla";
+  --body-typeface: "Kohinoor Gujarati";
+  --heading-typeface: "canela_text_trialmedium";
   --hero-headline-color: #fffffa;
   --project-title-color: #004d40;
   --project-description-color: #0a100f;
-  --project-title-typeface: "Kohinoor Bangla";
+  --project-title-typeface: "Kohinoor Gujarati";
   --background-color: #fffffa;
   /* --alt-background-color: #004d40; */
   --text-selection-background-color: #f26c0d;
@@ -266,10 +268,11 @@ p {
 }
 
 .project-description {
-  font-size: 0.875rem;
-  line-height: 1.2;
+  font-size: 0.75rem;
+  line-height: 1.5;
   margin-bottom: 1rem;
   color: var(--project-description-color);
+  width: 70ch;
 }
 
 /* SVG Logo Colour and Hover effects */
@@ -712,6 +715,36 @@ p {
     transition-duration: 0s;
   }
 }
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vh;
+}
+a.big-button {
+  width: 60%;
+  border-radius: 1rem;
+  background-image: linear-gradient(
+    to bottom,
+    #fff4cf,
+    #dfe0b5,
+    #bdce9e,
+    #98bb8c,
+    #70a97e
+  );
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  color: var(--primary-text-color);
+}
+
+a.big-button:active,
+a.big-button:hover {
+  background: rgb(223, 217, 202);
+  color: var(--primary-text-color);
+}
 
 /* 
 
@@ -784,7 +817,6 @@ p {
   width: 90%;
   margin: 0 auto;
   font-family: var(--font-sans);
-  border: 2px dashed orange;
 }
 @media (min-width: 600px) {
   .design-page-content {
@@ -895,6 +927,50 @@ p {
 
 .background-photography-page {
   background: var(--background-photography-page);
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .design-card:after {
+    transform: translateY(0);
+  }
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .content > *:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+
+  .design-card:hover,
+  .design-card:focus-within {
+    align-items: center;
+  }
+  .design-card:hover:before,
+  .design-card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .design-card:hover:after,
+  .design-card:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .design-card:hover .content,
+  .design-card:focus-within .content {
+    transform: translateY(0);
+  }
+  .design-card:hover .content > *:not(.title),
+  .design-card:focus-within .content > *:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .design-card:focus-within:before,
+  .design-card:focus-within:after,
+  .design-card:focus-within .content,
+  .design-card:focus-within .content > *:not(.title) {
+    transition-duration: 0s;
+  }
 }
 
 /* Global Footer
@@ -1357,12 +1433,11 @@ a.sub-navigation-link:hover {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: 3px dashed plum;
   }
 
   .project-image-row {
     width: 100%;
-    border: 5px dotted black;
+
     display: flex;
     flex-direction: row;
   }

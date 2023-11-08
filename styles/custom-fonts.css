@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Kohinoor Gujarati";
+  src: url("../custom-fonts/KohinoorGujarati-Bold.eot");
+  src: url("../custom-fonts/KohinoorGujarati-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../custom-fonts/KohinoorGujarati-Bold.woff2") format("woff2"),
+    url("../custom-fonts/KohinoorGujarati-Bold.woff") format("woff"),
+    url("../custom-fonts/KohinoorGujarati-Bold.ttf") format("truetype"),
+    url("../custom-fonts/KohinoorGujarati-Bold.svg#KohinoorGujarati-Bold")
+      format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kohinoor Gujarati";
+  src: url("../custom-fonts/KohinoorGujarati-Medium.eot");
+  src: url("../custom-fonts/KohinoorGujarati-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../custom-fonts/KohinoorGujarati-Medium.woff2") format("woff2"),
+    url("../custom-fonts/KohinoorGujarati-Medium.woff") format("woff"),
+    url("../custom-fonts/KohinoorGujarati-Medium.ttf") format("truetype"),
+    url("../custom-fonts/KohinoorGujarati-Medium.svg#KohinoorGujarati-Medium")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kohinoor Gujarati";
+  src: url("../custom-fonts/KohinoorGujarati-Regular.eot");
+  src: url("../custom-fonts/KohinoorGujarati-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("KohinoorGujarati-Regular.woff2") format("woff2"),
+    url("../custom-fonts/KohinoorGujarati-Regular.woff") format("woff"),
+    url("../custom-fonts/KohinoorGujarati-Regular.ttf") format("truetype"),
+    url("../custom-fonts/KohinoorGujarati-Regular.svg#KohinoorGujarati-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kohinoor Gujarati";
+  src: url("../custom-fonts/KohinoorGujarati-Light.eot");
+  src: url("../custom-fonts/KohinoorGujarati-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../custom-fonts/KohinoorGujarati-Light.woff2") format("woff2"),
+    url("../custom-fonts/KohinoorGujarati-Light.woff") format("woff"),
+    url("../custom-fonts/KohinoorGujarati-Light.ttf") format("truetype"),
+    url("../custom-fonts/KohinoorGujarati-Light.svg#KohinoorGujarati-Light")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kohinoor Gujarati";
+  src: url("../custom-fonts/KohinoorGujarati-Semibold.eot");
+  src: url("../custom-fonts/KohinoorGujarati-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../custom-fonts/KohinoorGujarati-Semibold.woff2") format("woff2"),
+    url("../custom-fonts/KohinoorGujarati-Semibold.woff") format("woff"),
+    url("../custom-fonts/KohinoorGujarati-Semibold.ttf") format("truetype"),
+    url("../custom-fonts/KohinoorGujarati-Semibold.svg#KohinoorGujarati-Semibold")
+      format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
