@@ -3,42 +3,164 @@
 
 <head>
   <title>Imogen Pettyfer - Visual Designer and Photographer</title>
-  <meta name="description" content="I am a third year in the IDEA Program at Capilano University.">
+  <meta name="description"
+    content="Hi my name is Imogen, and I am a third year student in CapilanoU’s IDEA program. I am most passionate about branding and photography.">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:image" content="screenshot.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <script src="https://kit.fontawesome.com/d300c2ea15.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preload" href="KohinoorBangla-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="KohinoorBangla-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="KohinoorBangla-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="KohinoorBangla-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="KohinoorBangla-Regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
-<body class="holding-page">
-  <div class="holding-page-wrapper">
-    <div class="holding-page-inner-container">
-      <a href="work.html">
-        <figure class="holding-page-image">
+<body class="work-page">
 
-          <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 179.97 180">
-            <defs>
-
-            </defs>
-            <path class="cls-1 i-stem"
-              d="m1.87,92.07v84.83c0,1.71,1.39,3.1,3.1,3.1h34.76c1.71,0,3.1-1.39,3.1-3.1v-99.53c0-2.1-2.35-3.13-4.07-1.92-10.12,7.17-23.01,11.22-33.84,13.39-1.68.34-3.04,1.52-3.04,3.23Z" />
-            <path class="cls-1 m-letter"
-              d="m141.85,0h-15.81c-1.21,0-2.29.75-2.7,1.89l-30.72,87.08h-.91L63.45,1.72C63.1.69,62.14,0,61.05,0h0c-1.38,0-2.5,1.12-2.51,2.5-.04,8.66.76,29.44-.18,40.24-.84,9.64-3.64,16.85-8.11,23.21-2.57,3.66-2.43,8.34-.87,12.53l26.68,76.41c.73,1.97,2.61,3.27,4.7,3.27h21.88c2.08,0,3.94-1.28,4.68-3.22l30.96-80.61c.37-.96,1.8-.7,1.8.33v102.19c0,1.71,1.39,3.1,3.1,3.1h33.69c1.71,0,3.1-1.39,3.1-3.1V3.1c0-1.71-1.39-3.1-3.1-3.1h-35.02Z" />
-            <path class="cls-1 i-dot"
-              d="m49.85,5.58c0-3.07-2.42-5.55-5.4-5.56l-18.71-.02H7.43c-.1,0-.18.02-.28.03-2.69.12-4.87,1.99-5.28,4.42v33.91c.5,3.4,2.64,6.09,6.94,7.29,18.03,5.03,10.98,25.96-7.87,32.58-.03.01-.06.02-.09.03-.1.03-.19.07-.29.11-.89.3-.65,1.51.29,1.52,0,0,.01,0,.02,0,.02,0,.05,0,.07,0,10.99,0,26.59-5.44,37.2-16,.23-.23.46-.45.68-.69,6.55-6.8,11.04-15.62,11.04-26.42V5.58Z" />
-          </svg>
-
-        </figure>
-        <h1 class="holding-page-title">Portfolio Coming Soon</h1>
-        <div class="holding-page-copyright">
-          <p>Imogen Pettyfer &copy; 2023. All rights reserved.</p>
+  <section class="hero">
+    <header class="hero-header">
+      <ul class="branding-navigation">
+        <li class="logo">
+           <img src="assets/imogen-pettyfer-logo-original.svg">
+          </a>
+        </li>
+      </ul>
+      <ul class="header-navigation">
+        <li class="navigation-item">
+          <a href="design.html" class="links-work-page">Design</a>
+        </li>
+        <li class="navigation-item">
+          <a href="photography.html" class="links-work-page">Photography</a>
+        </li>
+        <li class="navigation-item">
+          <a href="about.html" class="links-work-page">About</a>
+        </li>
+      </ul>
+    </header>
+    <div class="hero-headline-wrapper">
+      <div class="hero-headline-inner-wrapper">
+        <h1 class="hero-headline">I'm
+        </h1>
+        <div id="container">
+          <span id="text1"></span>
+          <span id="text2"></span>
         </div>
-      </a>
+      </div>
+      <!-- The SVG filter used to create the merging effect -->
+      <svg id="filters">
+        <defs>
+          <filter id="threshold">
+            <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 255 -140" />
+          </filter>
+        </defs>
+      </svg>
+    </div>
+  </section>
+
+  <main class="work-wrapper">
+    <section class="design-projects">
+      <ul class="grid">
+      </ul>
+
+
+<!--Codepen Card Demo Starts Here -->
+<main class="page-content">
+  <div class="card">
+    <div class="content">
+      <h2 class="title">JOVIA</h2>
+      <p class="copy">tagline here</p>
+      <button class="btn">View Project</button>
     </div>
   </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Spirits</h2>
+      <p class="copy">tagline here</p>
+      <button class="btn">View Projects</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Capstone</h2>
+      <p class="copy">taglin here</p>
+      <button class="btn"><a class="project-button" href="project-1.html">View Project</button>
+    </div>
+  </div>
+</main>
+<section class="button-wrapper">
+  <a href="design.html" class="big-button">View All Work</a>
+</section>
+
+<!--Codepen Card Demo Ends Here -->
+  </main>
+  <main class="work-wrapper">
+    <section class="photography-projects">
+      <ul class="grid">
+        <li class="projects-description">
+          <h2>Photography Work</h2>
+          <p>One of my passions in life is photogrphy! I shoot both film &amp; digital. The subjects that interest me
+            the most are automotive, architecture and natural landscapes. My goal moving forward is to become more
+            experienced with portraiture &amp; urban lifestyle photography.
+          </p>
+        <!-- </li>
+        <li class="work-page-grid-item"><a href="project-1.html">
+            <figure>
+              <img
+                src="" alt="project name">
+            </figure>
+          </a>
+        </li>
+        <li class="work-page-grid-item"><a href="project-1.html">
+            <figure>
+              <img
+                src=""
+                alt="project name">
+            </figure>
+          </a>
+        </li>
+        <li class="work-page-grid-item"><a href="project-1.html">
+            <figure>
+              <img
+                src=""
+                alt="project name">
+            </figure>
+          </a>
+        </li> -->
+      </ul>
+    </section>
+  </main>
+
+  <ul class="global-footer">
+    <!-- <li class="footer-item-2">
+      <h2>Awards &amp; Recognition</h2>
+      <ul class="awards-list">
+        <li class="award-item"><a href="#">Award goes here</a></li>
+        <li class="award-item"><a href="#">Recognition goes here</a></li>
+        <li class="award-item"><a href="#">Award goes here</a></li>
+      </ul>
+    </li> -->
+    <li class="footer-item-1">
+      <ul class="socials-list">
+        <li class="social-item"><a href="https://www.instagram.com/imogen_visuals/" target="_blank">Instagram</a></li>
+        <li class="social-item"><a href="https://www.linkedin.com/in/imogenvisuals//" target="_blank">LinkedIn</a></li>
+        <li class="social-item"><a href="https://www.behance.net/imogenvisuals" target="_blank">Behance</a></li>
+      </ul>
+    </li>
+    <li class="footer-item-4">
+      <p><a href="#top">Back to Top</a></p>
+      <p class="fineprint">Imogen Pettyfer &copy; 2023.</p>
+    </li>
+  </ul>
+
+  </script>
+  <script src="./js/javascript.js"></script>
 </body>
 
 </html>
