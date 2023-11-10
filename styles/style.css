@@ -1,5 +1,5 @@
 /* Fonts are in the HTML */
-
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;700&display=swap");
 /*
 
 Imported stylesheets. Remove the ones you do not want to use.
@@ -85,12 +85,12 @@ html {
   --hyperlink-hover-color: #ffd34e;
   /* --hyperlink-alternate-color: orangered; */
   /* --hover-color: #94a7ec; */
-  --body-typeface: "Kohinoor Gujarati";
+  --body-typeface: "Khula", sans-serif;
   --heading-typeface: "canela_text_trialmedium";
   --hero-headline-color: #fffffa;
   --project-title-color: #004d40;
   --project-description-color: #0a100f;
-  --project-title-typeface: "Kohinoor Gujarati";
+  --project-title-typeface: "Khula", sans-serif;
   --background-color: #fffffa;
   /* --alt-background-color: #004d40; */
   --text-selection-background-color: #f26c0d;
@@ -346,7 +346,7 @@ p {
 #text2 {
   color: #fffffa;
   text-transform: uppercase;
-  font-family: "Kohinoor Bangla";
+  font-family: var(--body-typeface);
   font-weight: 600;
   font-size: 6rem;
 }
