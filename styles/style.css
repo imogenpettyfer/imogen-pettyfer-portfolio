@@ -724,25 +724,26 @@ p {
   min-height: 5vh;
 }
 a.big-button {
-  width: 60%;
-  border-radius: 1rem;
-  background-image: linear-gradient(
+  width: 80%;
+  border-radius: 1.25rem;
+  background: #004c40;
+  /* background-image: linear-gradient(
     to bottom,
     #fff4cf,
     #dfe0b5,
     #bdce9e,
     #98bb8c,
     #70a97e
-  );
+  ); */
   text-align: center;
   font-size: 1.5rem;
-  padding: 1rem 2rem;
-  color: var(--primary-text-color);
+  padding: 1.125rem 2rem;
+  color: var(--background-color);
 }
 
 a.big-button:active,
 a.big-button:hover {
-  background: rgb(223, 217, 202);
+  background: #fffffa;
   color: var(--primary-text-color);
 }
 
