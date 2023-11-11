@@ -533,7 +533,7 @@ p {
   display: grid;
   grid-gap: 1rem;
   padding: 1rem;
-  max-width: 1024px;
+  width: 80%;
   margin: 0 auto;
   font-family: var(--font-sans);
 }
@@ -638,18 +638,17 @@ p {
   margin-top: 1rem;
 }
 
-.title {
-  font-size: 1.3rem;
+.card-title {
+  font-size: 1.875rem;
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
 }
 
-.copy {
-  /* font-family: var(--font-serif); */
-  font-size: 1.125rem;
-  /* font-style: italic; */
+.card-tagline {
+  font-size: 1.625rem;
   line-height: 1.35;
+  font-weight: 100;
 }
 
 .btn {
@@ -721,28 +720,29 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 5vh;
+  min-height: 10rem;
 }
-a.big-button {
+a.big-button-link {
   width: 80%;
   border-radius: 1.25rem;
   background: #004c40;
-  /* background-image: linear-gradient(
-    to bottom,
-    #fff4cf,
-    #dfe0b5,
-    #bdce9e,
-    #98bb8c,
-    #70a97e
-  ); */
   text-align: center;
   font-size: 1.5rem;
-  padding: 1.125rem 2rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: var(--background-color);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 1rem 3rem;
+  line-height: 1;
+  min-height: 4rem;
 }
 
-a.big-button:active,
-a.big-button:hover {
+a.big-button-link:active,
+a.big-button-link:hover {
   background: #fffffa;
   color: var(--primary-text-color);
 }
@@ -1364,39 +1364,40 @@ a.sub-navigation-link:hover {
     grid-row: 1 / 2;
   }
 
-  .footer-item-1 {
+  .footer-item-1a {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+  }
+  .footer-item-1b {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .footer-item-2 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    align-self: end;
+  }
+  .footer-item-3 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+  }
+
+  .footer-item-4 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    text-align: center;
+    align-self: end;
   }
 
   .about-item-2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
   }
-
-  .footer-item-2 {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-
   .about-item-3 {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
   }
-
-  .footer-item-3 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-  }
-
   .about-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
-  }
-
-  .footer-item-4 {
     grid-row: 2 / 3;
     grid-column: 1 / 4;
     text-align: center;
@@ -1411,7 +1412,9 @@ a.sub-navigation-link:hover {
 
   .photography-projects,
   .project-wrapper {
-    padding: 0.5rem;
+    width: 80%;
+    padding: 3rem 0.5rem 0.5rem 0.5rem; /* Top Right Bottom Left */
+    margin: 0 auto;
   }
 
   /* Project Page Flex Direction on Large Devices */
