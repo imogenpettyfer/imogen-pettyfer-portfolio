@@ -106,7 +106,7 @@ body {
 }
 
 ::selection {
-  /* background: var(--accent-color); */
+  background: var(--links-design-page);
 }
 
 /* Making all images responsive */
@@ -221,23 +221,6 @@ a.links-about-page {
   color: var(--links-about-page);
 }
 
-.navigation-arrow {
-  color: var(--alt-background-color);
-}
-
-.navigation-arrow:link {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--hyperlink-hover-color);
-  color: transparent;
-}
-
-.navigation-arrow:active,
-.navigation-arrow:hover {
-  color: var(--accent-color);
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--accent-color);
-}
-
 .colored-link {
   color: var(--hyperlink-alternate-color);
 }
@@ -253,6 +236,9 @@ p {
   font-size: 1rem;
   line-height: 1.3;
   margin-bottom: 1rem;
+}
+.light-paragraph {
+  color: var(--white-text-color);
 }
 
 .fineprint {
@@ -274,32 +260,6 @@ p {
   color: var(--project-description-color);
   width: 70ch;
 }
-
-/* SVG Logo Colour and Hover effects */
-
-.holding-page .cls-1 {
-  fill: #fffffa;
-}
-
-/* .holding-page .m-letter {
-  fill: #fffffa;
-}
-.holding-page .i-dot:hover,
-.i-stem:hover {
-  fill: #df9f20;
-} */
-
-.cls-1 {
-  fill: lime;
-}
-
-/* .m-letter {
-  fill: lime;
-}
-.i-dot:hover,
-.i-stem:hover {
-  fill: ##0ab5b8;
-} */
 
 /* Global Padding on every page */
 
@@ -515,11 +475,6 @@ p {
   color: var(--accent-color);
 } */
 
-.work-page,
-p {
-  color: var(--white-text-color);
-}
-
 /* CodePen Card Demo Style */
 
 :root {
@@ -720,31 +675,31 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 10rem;
+  /* min-height: 10rem; */
 }
-a.big-button-link {
-  width: 80%;
-  border-radius: 1.25rem;
-  background: #004c40;
+a.big-button-link,
+a.project-navigation-link {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--background-color);
+  color: var(--accent-color);
   text-transform: uppercase;
+  border-bottom: 4px solid var(--accent-color);
   margin: 0;
-  padding: 1rem 3rem;
-  line-height: 1;
-  min-height: 4rem;
+}
+
+a.project-navigation-link {
+  color: var(--primary-text-color);
 }
 
 a.big-button-link:active,
 a.big-button-link:hover {
-  background: #fffffa;
-  color: var(--primary-text-color);
+  color: var(--background-color);
+}
+
+a.project-navigation-link:active,
+a.project-navigation-link:hover {
+  color: var(--active-design-page);
 }
 
 /* 
@@ -1008,12 +963,12 @@ a.big-button-link:hover {
 
 .footer-item-3 {
   grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  grid-row: 2 / 3;
 }
 
 .footer-item-4 {
   grid-column: 1 / 2;
-  grid-row: 4 / 5;
+  grid-row: 2 / 3;
 }
 
 .footer-item-4,
@@ -1048,13 +1003,10 @@ a.big-button-link:hover {
 .project-navigation {
   display: flex;
   flex-direction: row;
-  flex: 1;
   align-items: flex-end;
   justify-content: space-between;
-}
-
-.arrow {
-  padding: 0;
+  background: yellow;
+  border: 1px solid red;
 }
 
 .project-image-container {
@@ -1153,14 +1105,27 @@ a.big-button-link:hover {
 }
 
 .error-page-wrapper {
+  background: url(../assets/photography/horizontal/imogen-pettyfer-visual-photographer-photography-motion-datsun-nissan-skytrain-driving-nikon.jpg);
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.error-page-inner-container {
-  text-align: center;
-}
-
-.error-page-title {
-  color: #0437f2;
+.error-page-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.875;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--primary-text-color);
 }
 
 /*
@@ -1380,6 +1345,8 @@ a.sub-navigation-link:hover {
   .footer-item-3 {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+    align-self: end;
+    background: yellowgreen;
   }
 
   .footer-item-4 {
@@ -1387,6 +1354,7 @@ a.sub-navigation-link:hover {
     grid-column: 2 / 3;
     text-align: center;
     align-self: end;
+    background: lightblue;
   }
 
   .about-item-2 {
@@ -1460,14 +1428,6 @@ a.sub-navigation-link:hover {
 
   .project-image-container {
     flex-direction: row;
-  }
-
-  .project-navigation {
-    justify-content: flex-start;
-  }
-
-  .arrow {
-    padding-right: 1rem;
   }
 }
 
