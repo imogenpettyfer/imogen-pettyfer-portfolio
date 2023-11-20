@@ -248,13 +248,33 @@ p {
 }
 
 .project-description {
-  font-size: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: auto;
+  position: relative;
+  text-align: center;
   line-height: 1.5;
   margin-bottom: 1rem;
   color: var(--project-description-color);
-  width: 70ch;
+  width: 80ch;
+  display: flex;
+  flex-direction: row;
 }
-
+.project-information-heading {
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+.project-information {
+  font-size: 1rem;
+  font-weight: 500;
+  /* margin: auto; */
+  position: relative;
+  text-align: left;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: var(--project-description-color);
+  width: 65ch;
+}
 /* Global Padding on every page */
 
 .work-page {
@@ -649,23 +669,37 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* min-height: 10rem; */
+}
+.project-button-wrapper {
+  width: 100%;
+  padding: 10em 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a.big-button-link {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  border-bottom: 3.5px solid var(--accent-color);
+  margin: 10px;
 }
 
-
-a.big-button-link,
 a.project-navigation-link {
   text-align: center;
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--accent-color);
   text-transform: uppercase;
-  border-bottom: 3.5px solid var(--primary-text-color);
+  border-bottom: 3.5px solid var(--active-design-page);
   margin: 10px;
 }
 
 a.project-navigation-link {
-  color: var(--primary-text-color);
+  color: var(--active-design-page);
 }
 
 a.big-button-link:active,
@@ -936,24 +970,37 @@ a.project-navigation-link:hover {
   color: var(--links-photography-page);
 }
 
-.footer-item-1 {
+.footer-item-1a {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
-
-.footer-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+.footer-item-1b {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
-
+.footer-item-2 {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  align-self: end;
+}
 .footer-item-3 {
-  grid-column: 1 / 2;
   grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  align-self: end;
 }
 
 .footer-item-4 {
-  grid-column: 1 / 2;
   grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  text-align: left;
+  align-self: end;
+}
+
+.footer-item-5 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  text-align: center;
+  align-self: end;
 }
 
 .footer-item-4,
@@ -991,7 +1038,7 @@ a.project-navigation-link:hover {
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 0 0 3rem 0;
+  padding: 5rem 1.5rem 3rem 1.5rem;
 }
 
 .project-image-container {
@@ -1238,10 +1285,6 @@ a.sub-navigation-link:hover {
   );
 }
 
-.photography-page .project-info {
-  color: #0d2059;
-}
-
 /*
 
 ███    ███ ███████ ██████  ██  █████       ██████  ██    ██ ███████ ██████  ██ ███████ ███████ 
@@ -1309,32 +1352,6 @@ a.sub-navigation-link:hover {
     grid-row: 1 / 2;
   }
 
-  .footer-item-1a {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-  .footer-item-1b {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-  }
-  .footer-item-2 {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-    align-self: end;
-  }
-  .footer-item-3 {
-    grid-row: 2 / 3;
-    grid-column: 3 / 4;
-    align-self: end;
-  }
-
-  .footer-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    text-align: left;
-    align-self: end;
-  }
-
   .about-item-2 {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
@@ -1367,20 +1384,29 @@ a.sub-navigation-link:hover {
 
   .project-image-row {
     width: 100%;
-
+    padding: 1rem 3rem;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
+  }
+  .project-header {
+    padding: 0;
   }
   .project-image-single {
     width: 100%;
   }
   .project-image-double {
-    width: 50%;
+    width: 49.35%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
   .project-image-triple {
-    width: 33.333333%;
+    width: 32.5%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
-
   .project-image-container {
     flex-direction: row;
   }
