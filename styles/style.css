@@ -92,8 +92,9 @@ html {
   --project-description-color: #0a100f;
   --background-color: #fffffa;
   --text-selection-background-color: #f26c0d;
-  --cymbeline-text: #ae9167;
+  --cymbeline-text: #9c7e5c;
   --burn-bc-text: #592116;
+  --traid-text: #0022cc;
 }
 
 body {
@@ -371,6 +372,9 @@ p {
 .logo {
   width: 3rem;
 }
+.long-logo {
+  width: 8rem;
+}
 
 .hero-headline-wrapper {
   display: flex;
@@ -546,10 +550,10 @@ p {
   pointer-events: none;
   background-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0) 0%,
+    /* rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0.009) 11.7%,
-    rgba(0, 0, 0, 0.034) 22.1%,
-    rgba(0, 0, 0, 0.072) 31.2%,
+    rgba(0, 0, 0, 0.034) 22.1%, */
+      rgba(0, 0, 0, 0.072) 31.2%,
     rgba(0, 0, 0, 0.123) 39.4%,
     rgba(0, 0, 0, 0.182) 46.6%,
     rgba(0, 0, 0, 0.249) 53.1%,
@@ -568,10 +572,40 @@ p {
 }
 
 .card-burn-bc:before {
-  background-image: url(../assets/projects/burn-bc/imogen-pettyfer-visuals-burn-bc-cover-heading-social-cause-campaign-advertising-parks-wildfire-fire-prevention-design-project.jpg);
+  background-image: url(../assets/projects/burn-bc/imogen-pettyfer-visuals-design-card-cover-burn-bc.jpg);
 }
 .card-after-hours:before {
-  background-image: url(../assets/projects/traid/imogen-pettyfer-visuals-traid-apparel-cover-heading-vintage-clothing-uk-london-design-project.jpg);
+  background-image: url(../assets/projects/);
+}
+.card-cookbook:before {
+  background-image: url(../assets/projects/cookbook/imogen-pettyfer-visuals-design-card-cover-cookbook-place-holder.jpg);
+}
+.card-cymbeline-gin:before {
+  background-image: url(../assets/projects/shakespeare/cymbeline/imogen-pettyfer-visuals-design-card-cover-cymbeline-gin.jpg);
+}
+.card-divinity:before {
+  background-image: url(../assets/projects/divinity/imogen-pettyfer-visuals-design-card-cover-divinity.jpg);
+}
+.card-grove:before {
+  background-image: url(../assets/projects/grove/imogen-pettyfer-visuals-design-card-cover-grove-place-holder.jpg);
+}
+.card-jovia:before {
+  background-image: url(../assets/projects/jovia/imogen-pettyfer-visuals-design-card-cover-jovia.jpg);
+}
+.card-fern:before {
+  background-image: url(../assets/projects/fern/imogen-pettyfer-visuals-design-card-cover-capstone-fern.jpg);
+}
+.card-traid:before {
+  background-image: url(../assets/projects/traid/imogen-pettyfer-visuals-design-card-cover-traid.jpg);
+}
+.index-card-jovia:before {
+  background-image: url(../assets/projects/jovia/imogen-pettyfer-visuals-design-index-card-cover-jovia.jpg);
+}
+.index-card-fern:before {
+  background-image: url(../assets/projects/fern/imogen-pettyfer-visuals-design-index-card-cover-fern.jpg);
+}
+.index-card-traid:before {
+  background-image: url(../assets/projects/traid/imogen-pettyfer-visuals-design-index-card-cover-traid.jpg);
 }
 
 .content {
@@ -688,7 +722,30 @@ a.big-button-link {
   border-bottom: 3.5px solid var(--accent-color);
   margin: 10px;
 }
-
+a.to-top-button-link {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--background-color);
+  text-transform: uppercase;
+  border-bottom: 3.5px solid var(--background-color);
+  margin: 10px;
+}
+a.to-top-button-project-link {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  border-bottom: 3.5px solid var(--primary-text-color);
+  margin: 10px;
+}
+a.photography-button-link {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--background-color);
+  text-transform: uppercase;
+  border-bottom: 3.5px solid var(--background-color);
+  margin: 10px;
+}
 a.project-navigation-link {
   text-align: center;
   font-size: 1.25rem;
@@ -707,7 +764,16 @@ a.big-button-link:active,
 a.big-button-link:hover {
   color: var(--background-color);
 }
-
+a.to-top-button-link:active,
+a.to-top-button-link:hover,
+a.photography-button-link:active,
+a.photography-button-link:hover {
+  color: var(--accent-color);
+}
+a.to-top-button-project-link:active,
+a.to-top-button-project-link:hover {
+  color: var(--links-design-page);
+}
 a.project-navigation-link:active,
 a.project-navigation-link:hover {
   color: var(--links-design-page);
@@ -934,7 +1000,14 @@ a.project-navigation-link:hover {
     transition-duration: 0s;
   }
 }
-
+.photography-projects {
+  width: 94%;
+  margin: auto;
+  padding: 10em 0.5rem 0.5rem 0.5rem; /* Top Right Bottom Left */
+}
+.photography-description {
+  width: 94%;
+}
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -970,28 +1043,32 @@ a.project-navigation-link:hover {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
-.footer-item-2 {
+.footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  justify-self: center;
+}
+.footer-item-2 {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  justify-self: center;
+  text-align: center;
 }
 .footer-item-3 {
   grid-column: 1 / 2;
-  grid-row: 4 / 5;
+  grid-row: 5 / 6;
   justify-self: end;
 }
-
-.footer-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 5 / 6;
-  justify-self: center;
-}
-
 .footer-item-5 {
   grid-column: 1 / 2;
   grid-row: 6 / 7;
 }
+.footer-item-6 {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+  justify-self: end;
+}
 
-.footer-item-4,
 .fineprint {
   color: var(--accent-color);
   font-size: 0.875rem;
@@ -1014,6 +1091,9 @@ a.project-navigation-link:hover {
 }
 .burn-bc-text {
   color: var(--burn-bc-text);
+}
+.traid-text {
+  color: var(--traid-text);
 }
 .project-wrapper {
   display: flex;
@@ -1310,7 +1390,6 @@ a.sub-navigation-link:hover {
   h3 {
     font-size: 1.625rem;
   }
-
   .hero-headline,
   #text1,
   #text2 {
@@ -1319,36 +1398,30 @@ a.sub-navigation-link:hover {
   .logo {
     width: 3rem;
   }
-
   .hero-headline-inner-wrapper {
     flex-direction: row;
   }
   .hero {
     min-height: 100vh;
   }
-
   .photography-description {
-    width: 115ch;
+    width: 59ch;
   }
   .hero-headline-wrapper {
     padding: 0 8rem;
   }
-
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 1rem;
   }
-
   /* Grayscale filter with full-colour on hover and tap */
   .work-page-grid-item a img {
     filter: grayscale(100);
   }
-
   .work-page-grid-item > a:active img,
   .work-page-grid-item > a:hover img {
     filter: grayscale(0);
   }
-
   .global-footer,
   .design-global-footer,
   .photography-global-footer {
@@ -1369,7 +1442,9 @@ a.sub-navigation-link:hover {
   .footer-item-2 {
     grid-row: 1 / 2;
     grid-column: 3 / 4;
+    justify-self: end;
     align-self: end;
+    text-align: right;
   }
   .footer-item-3 {
     grid-row: 2 / 3;
@@ -1380,8 +1455,7 @@ a.sub-navigation-link:hover {
   .footer-item-4 {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    text-align: left;
-    align-self: end;
+    justify-self: left;
   }
 
   .footer-item-5 {
@@ -1389,6 +1463,11 @@ a.sub-navigation-link:hover {
     grid-column: 2 / 3;
     text-align: center;
     align-self: end;
+  }
+  .footer-item-6 {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    justify-self: end;
   }
 
   .about {
@@ -1419,9 +1498,9 @@ a.sub-navigation-link:hover {
   /* Padding around work grid and project page */
 
   .photography-projects {
-    width: 94%;
-    margin: auto;
-    padding: 10em 0.5rem 0.5rem 0.5rem; /* Top Right Bottom Left */
+    width: 30%;
+    margin: 0;
+    padding: 10em 4rem 0 4rem; /* Top Right Bottom Left */
   }
 
   /* Main Project Image Area on Large Devices */
@@ -1449,12 +1528,12 @@ a.sub-navigation-link:hover {
   }
   .project-details-item-left {
     width: 50%;
-
+    padding: 8rem 0;
     padding-right: 1.5rem;
   }
   .project-details-item-right {
     width: 50%;
-
+    padding: 8rem 0;
     padding-left: 1.5rem;
   }
   .project-header {
