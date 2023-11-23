@@ -260,11 +260,11 @@ p {
   text-align: center;
   line-height: 1.4;
   margin-bottom: 1rem;
-  color: var(--project-description-color);
   width: 80ch;
 }
 .project-information-heading {
   text-transform: uppercase;
+  font-weight: 700;
   color: var(--primary-text-color);
 }
 .project-information {
