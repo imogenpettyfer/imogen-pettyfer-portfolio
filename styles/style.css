@@ -92,9 +92,6 @@ html {
   --project-description-color: #0a100f;
   --background-color: #fffffa;
   --text-selection-background-color: #f26c0d;
-  --cymbeline-text: #9c7e5c;
-  --burn-bc-text: #592116;
-  --traid-text: #0022cc;
 }
 
 body {
@@ -710,8 +707,8 @@ p {
   padding: 10em 0 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  /* align-items: center; */
 }
 a.big-button-link {
   text-align: center;
@@ -1086,15 +1083,6 @@ a.project-navigation-link:hover {
 
 /* Project Colours */
 
-.cymbeline-text {
-  color: var(--cymbeline-text);
-}
-.burn-bc-text {
-  color: var(--burn-bc-text);
-}
-.traid-text {
-  color: var(--traid-text);
-}
 .project-wrapper {
   display: flex;
   flex-direction: column;
